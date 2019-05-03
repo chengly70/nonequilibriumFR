@@ -1,13 +1,13 @@
 # nonequilibriumFR
 Code to implement moment closure method on coupling firing rate (Wilson-Cowan) heterogeneous network receiving correlated 
-background inputs.  All functions/scripts written in MATLAB
+background inputs.  All functions/scripts written in MATLAB.  Citation: Ly, Shew, Barreiro (2019) "Efficient calculation of heterogeneous non-equilibrium statistics in coupled firing rate models" Journal of Mathematical Neuroscience, Vol XX, pg XX. DOI: 
 
 Driver Files:
 scptAn_3.m -- driver file to simulate 3 cell network (Figs 1, 2), calls on rhs_momentsFP.m, getFstats.m, 
           iter_method.m, saves results in dAn_n3Tw.mat
 
 scptAn_3sin.m -- almost the exact same as scptAn_3 but has sinusoidal mu_t input, saves results in dAn_n3Tw_sin.mat
-scptAn_50.m -- driver file to simulate 40 cell network, dense coupling; allow varying coupling strength, 
+scptAn_50.m -- driver file to simulate 50 cell network, dense coupling; allow varying coupling strength, 
           calls on rhs_momentsFP.m, getFstats.m, iter_method.m, saves results in dAn_n50[a/b/c/d].mat, a/b/c/d denote different coupling 
           strengths
 scptAn_50sin.m -- almost the exact same as scptAn_50 but has sinusoidal mu_t input, saves results in dAn_n50_sin.mat
